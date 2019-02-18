@@ -61,14 +61,38 @@ kramdown:
 # disqus_username: gongbangrui
 
 # Gitalk
-gitalk:
-  enable: true    #是否开启Gitalk评论
-  clientID: 55ee13bda0964ed5c2ec                           #生成的clientID
-  clientSecret: 28445a559ed2ac0cc42cf616dd4fc77b8d8c4223   #生成的clientSecret
-  repo: gongbangrui.github.io    #仓库名称
-  owner: 'gongbangrui'   #github用户名
-  admin: ['gongbangrui']
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+#gitalk:
+#  enable: true    #是否开启Gitalk评论
+#  clientID: 55ee13bda0964ed5c2ec                           #生成的clientID
+#  clientSecret: 28445a559ed2ac0cc42cf616dd4fc77b8d8c4223   #生成的clientSecret
+#  repo: gongbangrui.github.io    #仓库名称
+#  owner: 'gongbangrui'   #github用户名
+#  admin: ['gongbangrui']
+#  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+<!-- Gitalk 评论 start  -->
+{% if site.gitalk.enable %}
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+    <script type="text/javascript">
+    var gitalk = new Gitalk({
+
+    // gitalk的主要参数
+        clientID: `55ee13bda0964ed5c2ec`,
+        clientSecret: `28445a559ed2ac0cc42cf616dd4fc77b8d8c4223`,
+        repo: `gongbangrui.github.io`,
+        owner: 'gongbangrui',
+        admin: ['gongbangrui'],
+    
+    });
+    gitalk.render('gitalk-container');
+</script>
+{% endif %}
+<!-- Gitalk end -->
 
 
 # 统计
