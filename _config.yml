@@ -12,7 +12,7 @@ home_repo: "https://ce17877258.icoc.bz  "
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "大切な人といつかまた巡り会えますように"
+sidebar-about-description: "gbr"
 sidebar-avatar: /img/about-Otone.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
